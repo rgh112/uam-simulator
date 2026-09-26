@@ -1,0 +1,58 @@
+{
+  "dataset": "male-cns:v1.0",
+  "license": "CC-BY-4.0",
+  "attribution": "MaleCNS consortium: FlyEM / HHMI Janelia, University of Cambridge, MRC LMB, Google Research",
+  "source_page": "https://male-cns.janelia.org/download/",
+  "sources": [
+    {
+      "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+      "bytes": 14483314,
+      "sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2"
+    },
+    {
+      "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/connectome-weights-male-cns-v1.0-minconf-0.5.feather",
+      "bytes": 1051241946,
+      "sha256": "e35da783d1c686b2b58b3b87cd6a403ae43bfcfba8bff28e08ef752c1a56afc1"
+    }
+  ],
+  "selection": {
+    "exact_types": [
+      "EPG",
+      "PEG",
+      "PEN_a(PEN1)",
+      "PEN_b(PEN2)",
+      "Delta7",
+      "PFNd",
+      "PFNv",
+      "FC2A",
+      "FC2B",
+      "FC2C",
+      "PFL1",
+      "PFL2",
+      "PFL3"
+    ],
+    "method": "All annotated neurons matching exact type; induced directed graph; all positive-weight internal edges retained; no neuron subsampling",
+    "synapse_confidence_min": 0.5,
+    "edge_weight_min": 1
+  },
+  "neurons": 350,
+  "directed_edges": 15182,
+  "synapses": 198571,
+  "type_counts": {
+    "EPG": 46,
+    "PEG": 18,
+    "PEN_a(PEN1)": 20,
+    "PEN_b(PEN2)": 22,
+    "Delta7": 42,
+    "PFNd": 40,
+    "PFNv": 20,
+    "FC2A": 18,
+    "FC2B": 27,
+    "FC2C": 47,
+    "PFL1": 14,
+    "PFL2": 12,
+    "PFL3": 24
+  },
+  "graph_sha256": "6acce3af1cfa8aa2a4ae81b3fa1d5e29bcf597685a38ebb0b2849d79e328af56",
+  "interpretation": "Anatomical connectivity only. Artificial rate neurons, sensor/action interfaces and learned weights are engineering choices. No neurotransmitter signs, morphology or biological dynamics inferred."
+}
